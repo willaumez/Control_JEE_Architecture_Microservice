@@ -1,0 +1,64 @@
+<div class="container mt-2" *ngIf="orderDetails">
+  <div class="row">
+      <div class="card">
+        <div class="card-header">Order ID: {{orderId}}</div>
+        <div class="card-body text-sm-start">
+          <ul class="list-group">
+            <li class="list-group-item">Order Id : {{orderDetails.id}}</li>
+            <li class="list-group-item">Date : {{orderDetails.createdAt | date : 'dd/MM/yyyy'}}</li>
+            <li class="list-group-item">Status : {{orderDetails.status}}</li>
+            <li class="list-group-item">Customer Id : {{orderDetails.customer.id}}</li>
+            <li class="list-group-item">Customer Name : {{orderDetails.customer.name}}</li>
+            <li class="list-group-item">Customer Email : {{orderDetails.customer.email}}</li>
+          </ul>
+        </div>
+      </div>
+  </div>
+  <div class="card">
+    <div class="card-header">Product Items</div>
+    <div class="card-body">
+      <table mat-table [dataSource]="orderDetails?.productItems" class="mat-elevation-z8">
+
+        <!-- Product Id Column -->
+        <ng-container matColumnDef="productId">
+          <th mat-header-cell *matHeaderCellDef> Product Id </th>
+          <td mat-cell *matCellDef="let pi"> {{pi.product.id}} </td>
+        </ng-container>
+
+        <!-- Product Name Column -->
+        <ng-container matColumnDef="productName">
+          <th mat-header-cell *matHeaderCellDef> Product Name </th>
+          <td mat-cell *matCellDef="let pi"> {{pi.product.name}} </td>
+        </ng-container>
+
+        <!-- Quantity Column -->
+        <ng-container matColumnDef="quantity">
+          <th mat-header-cell *matHeaderCellDef> Quantity </th>
+          <td mat-cell *matCellDef="let pi"> {{pi.quantity}} </td>
+        </ng-container>
+
+        <!-- Price Column -->
+        <ng-container matColumnDef="price">
+          <th mat-header-cell *matHeaderCellDef> Price </th>
+          <td mat-cell *matCellDef="let pi" class="text-end"> {{pi.price | number : '.2'}} </td>
+        </ng-container>
+
+        <!-- Discount Column -->
+        <ng-container matColumnDef="discount">
+          <th mat-header-cell *matHeaderCellDef> Discount </th>
+          <td mat-cell *matCellDef="let pi" class="text-end"> {{pi.discount | number : '.2'}} </td>
+        </ng-container>
+
+        <!-- Amount Column -->
+        <ng-container matColumnDef="amount">
+          <th mat-header-cell *matHeaderCellDef> Amount </th>
+          <td mat-cell *matCellDef="let pi" class="text-end"> {{pi.amount | number : '.2'}} </td>
+        </ng-container>
+
+        <!-- Total Row -->
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let pi; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  </div>
+</div>

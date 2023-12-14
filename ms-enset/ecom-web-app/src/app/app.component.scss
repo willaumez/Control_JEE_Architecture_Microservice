@@ -1,0 +1,36 @@
+/* Ajoute un fond et centre les éléments du mat-toolbar */
+mat-toolbar {
+  background-color: #2196f3; /* Couleur de fond */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px; /* Ajoute du padding aux côtés */
+  margin: 0 12px 12px 0;
+
+  h1 {
+    color: black; /* Couleur du texte */
+    margin: 0; /* Supprime les marges par défaut */
+  }
+
+  .menu-spacer {
+    flex: 1; /* Espacement flexible pour pousser les boutons sur le côté */
+  }
+
+  a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: black; /* Couleur du texte */
+    margin: 0 10px; /* Espacement entre les boutons */
+    transition: all 0.3s ease; /* Animation au survol */
+  }
+
+  a:hover {
+    opacity: 0.8; /* Réduit légèrement l'opacité au survol */
+  }
+
+  a.active {
+    background-color: black; /* Couleur de fond du bouton actif */
+    box-shadow: none; /* Supprime l'ombre du bouton actif */
+    color: white; /* Couleur du texte */
+  }
+
+}

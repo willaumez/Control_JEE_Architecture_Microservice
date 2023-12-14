@@ -1,0 +1,78 @@
+.container {
+  margin-top: 20px;
+
+  .card {
+    margin-bottom: 20px;
+
+    .card-header {
+      background-color: #2196f3;
+      color: white;
+    }
+
+    .card-body {
+      ul {
+        list-style: none;
+        padding-left: 0;
+
+        .list-group-item {
+          border: 1px solid #ddd;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+      background-color: #343a40;
+      color: white;
+
+      th {
+        padding: 8px;
+        text-align: left;
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          padding: 8px;
+          border-bottom: 1px solid #ddd;
+
+          &.text-end {
+            text-align: right;
+          }
+        }
+
+        &.bg-dark.text-white {
+          background-color: #343a40;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+/* Add your custom styles here */
+
+/* Example: */
+
+/* Style for the header row */
+.mat-header-row {
+  background-color: #333;
+  color: white;
+}
+
+/* Style for the rows */
+.mat-row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style for the active row */
+.mat-row.mat-row:hover {
+  background-color: #ddd;
+}
+

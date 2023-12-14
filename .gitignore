@@ -1,0 +1,9 @@
+# Dossiers
+node_modules/
+dist/
+angular/
+.tmp/
+
+# Fichiers
+*.log
+*.sqlite

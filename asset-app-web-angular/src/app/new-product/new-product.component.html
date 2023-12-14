@@ -1,0 +1,22 @@
+<div class="container">
+  <!-- Formulaire d'ajout -->
+  <form class="example-form" [formGroup]="addProductForm">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="ID" formControlName="id">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Name" formControlName="name">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Price" formControlName="price">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Quantity" formControlName="quantity">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <textarea matInput placeholder="Description" formControlName="description"></textarea>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="onAddProduct()">Add Product</button>
+  </form>
+
+</div>

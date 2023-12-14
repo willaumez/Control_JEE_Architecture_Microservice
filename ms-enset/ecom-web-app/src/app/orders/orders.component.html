@@ -1,0 +1,39 @@
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="orders?._embedded?.orders" class="mat-table">
+
+    <!-- ID Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>ID</th>
+      <td mat-cell *matCellDef="let order">{{ order.id }}</td>
+    </ng-container>
+
+    <!-- Date Column -->
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef>Date</th>
+      <td mat-cell *matCellDef="let order">{{ order.createdAt | date: 'dd/MM/yyyy' }}</td>
+    </ng-container>
+
+    <!-- Status Column -->
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef>Status</th>
+      <td mat-cell *matCellDef="let order">{{ order.status }}</td>
+    </ng-container>
+
+    <!-- CustomerId Column -->
+    <ng-container matColumnDef="customerId">
+      <th mat-header-cell *matHeaderCellDef>Customer ID</th>
+      <td mat-cell *matCellDef="let order">{{ order.customerId }}</td>
+    </ng-container>
+
+    <!-- Button Column -->
+    <ng-container matColumnDef="button">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let order">
+        <button mat-raised-button color="primary" (click)="getOrderDetails(order)">Order Details</button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="['id', 'date', 'status', 'customerId', 'button']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['id', 'date', 'status', 'customerId', 'button']"></tr>
+  </table>
+</div>
