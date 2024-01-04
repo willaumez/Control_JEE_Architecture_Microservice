@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <h1 routerLink="/home">Asset-App</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-raised-button routerLink="/admin/home" routerLinkActive="active"> Home <mat-icon>home</mat-icon></a>
+      <a mat-raised-button routerLink="/admin/products" routerLinkActive="active"> Products
+        <mat-icon>arrow_downward</mat-icon>
+        <mat-icon>arrow_upward</mat-icon></a>
+      <a mat-raised-button routerLink="/admin/new-product" routerLinkActive="active"> New-Product
+        <mat-icon>add_circle_outline</mat-icon></a>
+
+      <button mat-raised-button color="primary" *ngIf="appState.authState.isAuthenticated" (click)="logout()">
+
+        <mat-icon>logout</mat-icon>{{appState.authState.username}}
+      </button>
+      <button mat-raised-button color="primary" *ngIf="!appState.authState.isAuthenticated" (click)="login()">
+        <mat-icon>login</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<router-outlet>
+
+</router-outlet>
+
+<div class="m-4 p-3">
+
+</div>

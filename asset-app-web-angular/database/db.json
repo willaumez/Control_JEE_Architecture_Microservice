@@ -1,46 +1,351 @@
 {
+  "users": [
+    {
+      "id": "user1",
+      "password": "MTIzNA==",
+      "role": [
+        "USER"
+      ],
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMSIsIm5hbWUiOiJPd2FuaSBzYW5hIiwiaWF0IjoxNTE2MjM5MDIyLCJmaXJzdG5hbWUiOiJzYW5hIiwibGFzdG5hbWUiOiJvd2FuaSIsImVtYWlsIjoib3dhbmlAZ21haWwuY29tIiwicm9sZXMiOlsiVVNFUiJdfQ.WypUq8eZNo4aq68aWi_Jt7Q9pltZW-VcAP-aDSQsDaE"
+    },
+    {
+      "id": "user2",
+      "password": "MTIzNA==",
+      "role": [
+        "USER"
+      ],
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMiIsIm5hbWUiOiJPd2FuaSBzYW5hIiwiaWF0IjoxNTE2MjM5MDIyLCJmaXJzdG5hbWUiOiJzYW5hIiwibGFzdG5hbWUiOiJvd2FuaSIsImVtYWlsIjoib3dhbmlAZ21haWwuY29tIiwicm9sZXMiOlsiVVNFUiJdfQ._Bodz6wdty6GNVxI24-MH45L5m4eF581wywHB6YC-o4"
+    },
+    {
+      "id": "admin",
+      "password": "MTIzNA==",
+      "role": [
+        "USER",
+        "ADMIN"
+      ],
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsIm5hbWUiOiJPd2FuaSBzYW5hIiwiaWF0IjoxNTE2MjM5MDIyLCJmaXJzdG5hbWUiOiJzYW5hIiwibGFzdG5hbWUiOiJvd2FuaSIsImVtYWlsIjoib3dhbmlAZ21haWwuY29tIiwicm9sZXMiOlsiVVNFUiIsIkFETUlOIl19.-YVUdIzh6qc6adUWpdS96xov42BgA61-dIRD_X1hCPE"
+    }
+  ],
   "products": [
-    {"id": 1, "name": "Apple", "price": 1.99, "quantity": 100, "description": "Good fruit", "checked": true },
-    {"id": 2, "name": "Banana", "price": 2.99, "quantity": 200, "description": "Good fruit", "checked": false },
-    {"id": 3, "name": "Orange", "price": 3.99, "quantity": 300, "description": "Good fruit", "checked": false },
-    {"id": 4, "name": "Pineapple", "price": 4.99, "quantity": 400, "description": "Good fruit", "checked": false },
-    {"id": 5, "name": "Mango", "price": 5.99, "quantity": 500, "description": "Good fruit", "checked": false },
-    {"id": 6, "name": "Grape", "price": 6.99, "quantity": 600, "description": "Good fruit", "checked": false },
-    {"id": 7, "name": "Watermelon", "price": 7.99, "quantity": 700, "description": "Good fruit", "checked": false },
-    {"id": 8, "name": "Strawberry", "price": 8.99, "quantity": 800, "description": "Good fruit", "checked": false },
-    {"id": 9, "name": "Blueberry", "price": 9.99, "quantity": 900, "description": "Good fruit", "checked": false },
-    {"id": 10, "name": "Cherry", "price": 10.99, "quantity": 1000, "description": "Good fruit", "checked": false },
-    {"id": 11, "name": "Apple", "price": 1.99, "quantity": 100, "description": "Good fruit", "checked": true },
-    {"id": 12, "name": "Banana", "price": 2.99, "quantity": 200, "description": "Good fruit", "checked": false },
-    {"id": 13, "name": "Orange", "price": 3.99, "quantity": 300, "description": "Good fruit", "checked": false },
-    {"id": 14, "name": "Pineapple", "price": 4.99, "quantity": 400, "description": "Good fruit", "checked": false },
-    {"id": 15, "name": "Mango", "price": 5.99, "quantity": 500, "description": "Good fruit", "checked": false },
-    {"id": 16, "name": "Grape", "price": 6.99, "quantity": 600, "description": "Good fruit", "checked": false },
-    {"id": 17, "name": "Watermelon", "price": 7.99, "quantity": 700, "description": "Good fruit", "checked": false },
-    {"id": 18, "name": "Strawberry", "price": 8.99, "quantity": 800, "description": "Good fruit", "checked": false },
-    {"id": 19, "name": "Blueberry", "price": 9.99, "quantity": 900, "description": "Good fruit", "checked": false },
-    {"id": 20, "name": "Cherry", "price": 10.99, "quantity": 1000, "description": "Good fruit", "checked": false },
-    {"id": 21, "name": "Apple", "price": 1.99, "quantity": 100, "description": "Good fruit", "checked": true },
-    {"id": 22, "name": "Banana", "price": 2.99, "quantity": 200, "description": "Good fruit", "checked": false },
-    {"id": 23, "name": "Orange", "price": 3.99, "quantity": 300, "description": "Good fruit", "checked": false },
-    {"id": 24, "name": "Pineapple", "price": 4.99, "quantity": 400, "description": "Good fruit", "checked": false },
-    {"id": 25, "name": "Mango", "price": 5.99, "quantity": 500, "description": "Good fruit", "checked": false },
-    {"id": 26, "name": "Grape", "price": 6.99, "quantity": 600, "description": "Good fruit", "checked": false },
-    {"id": 27, "name": "Watermelon", "price": 7.99, "quantity": 700, "description": "Good fruit", "checked": false },
-    {"id": 28, "name": "Strawberry", "price": 8.99, "quantity": 800, "description": "Good fruit", "checked": false },
-    {"id": 29, "name": "Blueberry", "price": 9.99, "quantity": 900, "description": "Good fruit", "checked": false },
-    {"id": 30, "name": "Cherry", "price": 10.99, "quantity": 1000, "description": "Good fruit", "checked": false },
-    {"id": 31, "name": "Apple", "price": 1.99, "quantity": 100, "description": "Good fruit", "checked": true },
-    {"id": 32, "name": "Banana", "price": 2.99, "quantity": 200, "description": "Good fruit", "checked": false },
-    {"id": 33, "name": "Orange", "price": 3.99, "quantity": 300, "description": "Good fruit", "checked": false },
-    {"id": 34, "name": "Pineapple", "price": 4.99, "quantity": 400, "description": "Good fruit", "checked": false },
-    {"id": 35, "name": "Mango", "price": 5.99, "quantity": 500, "description": "Good fruit", "checked": false },
-    {"id": 36, "name": "Grape", "price": 6.99, "quantity": 600, "description": "Good fruit", "checked": false },
-    {"id": 37, "name": "Watermelon", "price": 7.99, "quantity": 700, "description": "Good fruit", "checked": false },
-    {"id": 38, "name": "Strawberry", "price": 8.99, "quantity": 800, "description": "Good fruit", "checked": false },
-    {"id": 39, "name": "Blueberry", "price": 9.99, "quantity": 900, "description": "Good fruit", "checked": false },
-    {"id": 40, "name": "Cherry", "price": 10.99, "quantity": 1000, "description": "Good fruit", "checked": false },
-    {"id": 41, "name": "Apple", "price": 1.99, "quantity": 100, "description": "Good fruit", "checked": true },
-    {"id": 42, "name": "Banana", "price": 2.99, "quantity": 200, "description": "Good fruit", "checked": false }
+    {
+      "id": 1,
+      "name": "Apple",
+      "price": 1.99,
+      "quantity": 100,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 2,
+      "name": "Banana",
+      "price": 2.99,
+      "quantity": 200,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 4,
+      "name": "Pineapple",
+      "price": 4.99,
+      "quantity": 400,
+      "description": "Good fruit",
+      "checked": true
+    },
+    {
+      "id": 5,
+      "name": "Mango",
+      "price": 5.99,
+      "quantity": 500,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 6,
+      "name": "Grape",
+      "price": 6.99,
+      "quantity": 600,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 7,
+      "name": "Watermelon",
+      "price": 7.99,
+      "quantity": 700,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 8,
+      "name": "Strawberry",
+      "price": 8.99,
+      "quantity": 800,
+      "description": "Good fruit",
+      "checked": true
+    },
+    {
+      "id": 9,
+      "name": "Blueberry",
+      "price": 9.99,
+      "quantity": 900,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 10,
+      "name": "Cherry",
+      "price": 10.99,
+      "quantity": 1000,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 11,
+      "name": "Apple",
+      "price": 1.99,
+      "quantity": 100,
+      "description": "Good fruit",
+      "checked": true
+    },
+    {
+      "id": 12,
+      "name": "Banana",
+      "price": 2.99,
+      "quantity": 200,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 13,
+      "name": "Orange",
+      "price": 3.99,
+      "quantity": 300,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 14,
+      "name": "Pineapple",
+      "price": 4.99,
+      "quantity": 400,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 15,
+      "name": "Mango",
+      "price": 5.99,
+      "quantity": 500,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 16,
+      "name": "Grape",
+      "price": 6.99,
+      "quantity": 600,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 17,
+      "name": "Watermelon",
+      "price": 7.99,
+      "quantity": 700,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 18,
+      "name": "Strawberry",
+      "price": 8.99,
+      "quantity": 800,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 19,
+      "name": "Blueberry",
+      "price": 9.99,
+      "quantity": 900,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 20,
+      "name": "Cherry",
+      "price": 10.99,
+      "quantity": 1000,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 21,
+      "name": "Apple",
+      "price": 1.99,
+      "quantity": 100,
+      "description": "Good fruit",
+      "checked": true
+    },
+    {
+      "id": 22,
+      "name": "Banana",
+      "price": 2.99,
+      "quantity": 200,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 23,
+      "name": "Orange",
+      "price": 3.99,
+      "quantity": 300,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 24,
+      "name": "Pineapple",
+      "price": 4.99,
+      "quantity": 400,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 25,
+      "name": "Mango",
+      "price": 5.99,
+      "quantity": 500,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 26,
+      "name": "Grape",
+      "price": 6.99,
+      "quantity": 600,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 27,
+      "name": "Watermelon",
+      "price": 7.99,
+      "quantity": 700,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 28,
+      "name": "Strawberry",
+      "price": 8.99,
+      "quantity": 800,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 29,
+      "name": "Blueberry",
+      "price": 9.99,
+      "quantity": 900,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 30,
+      "name": "Cherry",
+      "price": 10.99,
+      "quantity": 1000,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 31,
+      "name": "Apple",
+      "price": 1.99,
+      "quantity": 100,
+      "description": "Good fruit",
+      "checked": true
+    },
+    {
+      "id": 32,
+      "name": "Banana",
+      "price": 2.99,
+      "quantity": 200,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 33,
+      "name": "Orange",
+      "price": 3.99,
+      "quantity": 300,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 34,
+      "name": "Pineapple",
+      "price": 4.99,
+      "quantity": 400,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 35,
+      "name": "Mango",
+      "price": 5.99,
+      "quantity": 500,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 36,
+      "name": "Grape",
+      "price": 6.99,
+      "quantity": 600,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 37,
+      "name": "Watermelon",
+      "price": 7.99,
+      "quantity": 700,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 38,
+      "name": "Strawberry",
+      "price": 8.99,
+      "quantity": 800,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 39,
+      "name": "Blueberry",
+      "price": 9.99,
+      "quantity": 900,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 40,
+      "name": "Cherry",
+      "price": 10.99,
+      "quantity": 1000,
+      "description": "Good fruit",
+      "checked": false
+    },
+    {
+      "id": 41,
+      "name": "Apple",
+      "price": 1.99,
+      "quantity": 100,
+      "description": "Good fruit",
+      "checked": true
+    }
   ]
 }

@@ -1,3 +1,25 @@
 table {
   width: 100%;
 }
+
+/* Styles pour la barre de recherche */
+/* Styles pour le conteneur */
+.ng-container {
+  display: flex; /* Utiliser flexbox pour placer les éléments côte à côte */
+  align-items: center; /* Aligner les éléments verticalement au centre */
+  justify-content: center;
+}
+
+/* Styles pour le champ de saisie */
+.example-full-width {
+  width: 100%; /* Largeur maximale pour les champs */
+  justify-content: center;
+}
+
+/* Styles pour le bouton d'effacement */
+button {
+  height: 100%; /* Hauteur égale à la barre de recherche */
+  display: flex;
+  align-items: center; /* Aligner le contenu verticalement */
+  padding: 0 8px; /* Espacement interne du bouton */
+}

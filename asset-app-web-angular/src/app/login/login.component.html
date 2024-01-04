@@ -1,0 +1,24 @@
+<div class="card m-5">
+  <div class="card-header">
+    <div class="card-title">
+      <h2 class="m-2 text-primary text-center">Authentication</h2>
+    </div>
+  </div>
+  <div class="alert alert-danger" *ngIf="errorMessage">
+    <strong>Erreur!:  </strong> {{errorMessage}}
+  </div>
+  <div class="card-body container">
+    <!-- Formulaire d'ajout -->
+    <form class="example-form" [formGroup]="formLogin" (ngSubmit)="handleLogin()">
+      <mat-form-field appearance="outline" class="example-full-width">
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="Username" formControlName="username">
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Password" formControlName="password">
+      </mat-form-field>
+      <button mat-raised-button color="primary">----------  Login  ----------</button>
+    </form>
+  </div>
+</div>
